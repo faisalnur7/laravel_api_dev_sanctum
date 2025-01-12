@@ -64,3 +64,26 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## Installation Steps
+
+To get started with Laravel, follow these installation steps:
+
+1. Install the dependencies via Composer:
+   ```bash
+   composer install
+
+2. Set up Laravel Sail (if using Docker):
+   php artisan sail:install
+
+
+3. Start the Docker containers: 
+   ./vendor/bin/sail up -d
+
+
+4. Run database migrations:
+   ./vendor/bin/sail artisan migrate
+
+
+5. Install the API (if needed):
+   ./vendor/bin/sail artisan install:api
