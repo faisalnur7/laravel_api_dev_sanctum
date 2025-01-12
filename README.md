@@ -74,16 +74,20 @@ To get started with Laravel, follow these installation steps:
    composer install
 
 2. Set up Laravel Sail (if using Docker):
+   ```bash
    php artisan sail:install
 
 
-3. Start the Docker containers: 
+3. Start the Docker containers:
+   ```bash 
    ./vendor/bin/sail up -d
 
 
 4. Run database migrations:
+   ```bash
    ./vendor/bin/sail artisan migrate
 
 
 5. Install the API (if needed):
+   ```bash
    ./vendor/bin/sail artisan install:api
